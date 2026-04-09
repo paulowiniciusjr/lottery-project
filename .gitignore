@@ -1,0 +1,49 @@
+# Gradle
+.gradle/
+build/
+
+# Compilados
+*.class
+*.jar
+*.war
+
+# Logs
+*.log
+
+# IntelliJ
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# dart
+.dart_tool/
+.packages
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# global
+node_modules/
+build/
+.gradle/
+.dart_tool/
+
+# IDE
+.idea/
+.vscode/
+
+# logs
+*.log
+
+# binários
+*.class
+*.bin
+*.lock
+*.keystream
+*.len
+*.at

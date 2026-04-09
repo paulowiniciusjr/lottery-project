@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option java_package = "com.lottery";
+option java_multiple_files = true;
+
+service LotteryService {
+  rpc GenerateGame (GameRequest) returns (GameResponse);
+}
+
+enum GameType {
+  UNKNOWN = 0;
+  LOTOFACIL = 1;
+  MEGASENA = 2;
+}
+
+message GameRequest {
+  GameType type = 1;
+  int32 quantity = 2;
+}
+
+message Game {
+  repeated int32 numbers = 1;
+}
+
+message GameResponse {
+  repeated Game games = 1;
+}
